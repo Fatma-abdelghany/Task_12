@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
             Consumer<ProductProvider>(
               builder: (__, productProvider, _) {
                 return FutureBuilder(
-                    future: productProvider.getProducts(context, limit: 3),
+                    future: productProvider.getProducts(context, limit: 2),
                     builder: (context, snapshot) {
                       if (snapshot.connectionState == ConnectionState.waiting) {
                         return const CircularProgressIndicator();
